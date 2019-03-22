@@ -17,3 +17,16 @@
 #     pass
 #
 # Put a comment noting which class is the base class
+
+class Vehicle:
+    def __init__(self):
+        pass
+
+
+class FlightVehicle(Vehicle):
+    def __init__(self):
+        pass
+
+class Starship(FlightVehicle):
+    def __init__(self)
+        pass
