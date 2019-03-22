@@ -9,7 +9,7 @@ class GroundVehicle():
 
     # TODO
     def drive(self):
-        return 'vroom'
+        return 'vroooom'
 
 
 # Subclass Motorcycle from GroundVehicle.
@@ -20,12 +20,12 @@ class GroundVehicle():
 # Override the drive() method in Motorcycle so that it returns "BRAAAP!!"
 
 # TODO
-cless Motorcycle(GroundVehicle):
+class Motorcycle(GroundVehicle):
     def __init__(self):
         super().__init__(num_wheels=2)
         
-    def drive(self)
-    return 'BRAAAP!!'
+    def drive(self):
+        return 'BRAAAP!!'
 
 vehicles = [
     GroundVehicle(),
