@@ -32,8 +32,15 @@ cities = []
   # For each city record, create a new City instance and add it to the 
   # `cities` list
 def cityreader(cities=[]):
-    
-    return cities
+    with open("cities.csv") as csv_file:
+        city_reader = csv.reader(csv_file, delimiter=",")
+        line_count = 0
+        for row in city_reader:
+          if line_count ==0:
+            line_count += 1
+          else:
+            cities.append(city(row[0], float(row[3]), float(row[4])))
+        return cities
 
 cityreader(cities)
 
